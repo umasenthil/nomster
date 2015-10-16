@@ -7,8 +7,9 @@ gem 'rails', '4.0.1'
 gem 'pg'
 
 # Use SCSS for stylesheets
-gem 'bootstrap-sass', '~> 3.3.4'
-gem 'sass-rails', '~> 4.0.0'
+gem 'bootstrap-sass', '~> 3.3.5.1'
+gem 'sass-rails'
+gem 'sprockets', '2.11.0'
 
 # Use Kanimari for pagination
 gem 'kaminari'
