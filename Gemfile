@@ -11,6 +11,9 @@ gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'sass-rails'
 gem 'sprockets', '2.11.0'
 
+# User device for user authentication
+gem 'devise', '>= 3.2.4'
+
 # Use Kanimari for pagination
 gem 'kaminari'
 gem 'bootstrap-kaminari-views'
