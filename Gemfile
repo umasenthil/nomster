@@ -21,6 +21,12 @@ gem 'bootstrap-kaminari-views'
 # Use simple_form for form
 gem 'simple_form'
 
+# Use geocoder for converting address into latitude and longitude
+gem "geocoder"
+
+#use figaro to add values to the ENV on our localhost
+gem "figaro", ">= 1.0.0"
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
