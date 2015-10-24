@@ -3,7 +3,7 @@
 	<i><%= @place.address %></i>
 	<br /> <br />
 	<p> <%= @place.description %></p>
-	
+	<% if @place.latitude.present? && @place.longitude.present? %>
 	<style>
       html, body {
         height: 100%;
@@ -38,6 +38,7 @@
         src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap"></script>
 	
 	<div id="map"></div>
+	<% end %>
 	
 	<div class="pull-right">
 		<% if current_user && current_user == @place.user %>
