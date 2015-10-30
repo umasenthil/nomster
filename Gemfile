@@ -27,6 +27,9 @@ gem "geocoder"
 #use figaro to add values to the ENV on our localhost
 gem "figaro", ">= 1.0.0"
 
+#use carrierwave for image uploading
+gem 'carrierwave'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 

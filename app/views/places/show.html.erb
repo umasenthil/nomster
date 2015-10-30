@@ -1,4 +1,3 @@
-
 <!--- Places detail, map, Edit and Destroy buttons for place --->
 <div class="booyah-box col-xs-10 col-xs-offset-1">
 	<h1><%= @place.name %></h1>
@@ -103,6 +102,16 @@
 
 <!--- Form for Photos --->
 <%= simple_form_for @photo, :url => place_photos_path(@place)  do |f| %>
+  <%= f.input :avatars %>
   <%= f.input :caption %>
   <%= f.submit "Add image", :class => 'btn btn-primary' %>
+<% end %>
+
+<!--- Photos block --->
+<h1 class="pull-left">Photos </h1>
+<% @place.photos.each do |photo| %>
+	<div class="col-xs-10">
+		<%= image_tag photo.avatars %>
+		<%= photo.caption %>
+	</div>
 <% end %>
