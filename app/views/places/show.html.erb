@@ -102,7 +102,7 @@
 
 <!--- Form for Photos --->
 <%= simple_form_for @photo, :url => place_photos_path(@place)  do |f| %>
-  <%= f.input :avatars %>
+  <%= f.input :pictures %>
   <%= f.input :caption %>
   <%= f.submit "Add image", :class => 'btn btn-primary' %>
 <% end %>
@@ -111,7 +111,7 @@
 <h1 class="pull-left">Photos </h1>
 <% @place.photos.each do |photo| %>
 	<div class="col-xs-10">
-		<%= image_tag photo.avatars %>
+		<%= image_tag photo.pictures %>
 		<%= photo.caption %>
 	</div>
 <% end %>
