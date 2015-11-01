@@ -1,5 +1,5 @@
 class AddPictureToPhotos < ActiveRecord::Migration
   def change
-    remove_column :photos, :pictures, :string
+    add_column :photos, :picture, :string
   end
 end

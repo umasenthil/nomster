@@ -22,6 +22,11 @@
 			<small><%= place.user.email %></small>
 		<% end %>
 		
+		<% if place.photos.present? %>
+			<div class="col-xs-12">
+				<%= image_tag place.photos.last %>
+			</div>
+		<% end %>
 	
 	</div>
 <% end %>
