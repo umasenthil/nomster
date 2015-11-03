@@ -30,6 +30,9 @@ gem "figaro", ">= 1.0.0"
 #use carrierwave for image uploading
 gem 'carrierwave'
 
+# Use Fog of carrierwave for Amazon S3
+gem "fog", "~> 1.3.1"
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
