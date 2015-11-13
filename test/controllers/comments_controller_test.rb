@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class CommentsControllerTest < ActionController::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "comment creation" do
+    assert true
+  end
 end
