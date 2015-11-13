@@ -11,5 +11,14 @@ FactoryGirl.define do
 	name "food place"
     description "I love food"
     address "san diego, CA 92127"
+	association :user
+  end
+  
+  factory :comment do
+	message "Not bad"
+	rating "3_star"
+	
+	association :place
+	association :user
   end
 end
