@@ -11,7 +11,7 @@ class CommentsControllerTest < ActionController::TestCase
 	assert_difference ('Comment.count') do
 	  post :create, :place_id => place.id, :comment => { :rating => '5_star', :message => 'Healthy Food',}
 	end
-	assert_redirected_to_place_path(place)
+	assert_redirected_to place_path(place)
    
   end
 end
